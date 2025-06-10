@@ -1,0 +1,11 @@
+services:
+  react-dev:
+    build: ./Docker
+    volumes:
+      - ./:/app
+      - /app/node_modules
+    ports:
+      - "3000:3000"
+    container_name: react_dev_container
+    stdin_open: true
+    tty: true
